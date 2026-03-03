@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.repolite.app
+</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>repolite</string>
+			</array>
+		</dict>
+	</array>
+	<key>GITHUB_CLIENT_ID</key>
+	<string>Ov23likr2tTMGjza13Ex</string>
+	<key>GITHUB_CLIENT_SECRET</key>
+	<string>10e110051dfd3c322118cbedcd7903d69e3354e2</string>
+</dict>
+</plist>
