@@ -10,9 +10,28 @@
 		CC4C5AAD2F572AE5007EB220 /* Secrets.xcconfig in Sources */ = {isa = PBXBuildFile; fileRef = CC4C5AAC2F572ADB007EB220 /* Secrets.xcconfig */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CC7B26932F5784A50007D366 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC4C5A912F572A04007EB220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC4C5A982F572A04007EB220;
+			remoteInfo = RepoLite;
+		};
+		CC7B26BD2F5785690007D366 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC4C5A912F572A04007EB220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC4C5A982F572A04007EB220;
+			remoteInfo = RepoLite;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		CC4C5A992F572A04007EB220 /* RepoLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepoLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4C5AAC2F572ADB007EB220 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		CC7B268F2F5784A50007D366 /* RepoLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepoLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC7B26B72F5785690007D366 /* RepoLiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepoLiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -34,10 +53,34 @@
 			path = RepoLite;
 			sourceTree = "<group>";
 		};
+		CC7B26902F5784A50007D366 /* RepoLiteTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RepoLiteTests;
+			sourceTree = "<group>";
+		};
+		CC7B26B82F5785690007D366 /* RepoLiteUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RepoLiteUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CC4C5A962F572A04007EB220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7B268C2F5784A50007D366 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7B26B42F5785690007D366 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -52,6 +95,8 @@
 			children = (
 				CC4C5AAC2F572ADB007EB220 /* Secrets.xcconfig */,
 				CC4C5A9B2F572A04007EB220 /* RepoLite */,
+				CC7B26902F5784A50007D366 /* RepoLiteTests */,
+				CC7B26B82F5785690007D366 /* RepoLiteUITests */,
 				CC4C5A9A2F572A04007EB220 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				CC4C5A992F572A04007EB220 /* RepoLite.app */,
+				CC7B268F2F5784A50007D366 /* RepoLiteTests.xctest */,
+				CC7B26B72F5785690007D366 /* RepoLiteUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +136,52 @@
 			productReference = CC4C5A992F572A04007EB220 /* RepoLite.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CC7B268E2F5784A50007D366 /* RepoLiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7B26952F5784A50007D366 /* Build configuration list for PBXNativeTarget "RepoLiteTests" */;
+			buildPhases = (
+				CC7B268B2F5784A50007D366 /* Sources */,
+				CC7B268C2F5784A50007D366 /* Frameworks */,
+				CC7B268D2F5784A50007D366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC7B26942F5784A50007D366 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CC7B26902F5784A50007D366 /* RepoLiteTests */,
+			);
+			name = RepoLiteTests;
+			packageProductDependencies = (
+			);
+			productName = RepoLiteTests;
+			productReference = CC7B268F2F5784A50007D366 /* RepoLiteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC7B26B62F5785690007D366 /* RepoLiteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC7B26BF2F5785690007D366 /* Build configuration list for PBXNativeTarget "RepoLiteUITests" */;
+			buildPhases = (
+				CC7B26B32F5785690007D366 /* Sources */,
+				CC7B26B42F5785690007D366 /* Frameworks */,
+				CC7B26B52F5785690007D366 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC7B26BE2F5785690007D366 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CC7B26B82F5785690007D366 /* RepoLiteUITests */,
+			);
+			name = RepoLiteUITests;
+			packageProductDependencies = (
+			);
+			productName = RepoLiteUITests;
+			productReference = CC7B26B72F5785690007D366 /* RepoLiteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -101,6 +194,14 @@
 				TargetAttributes = {
 					CC4C5A982F572A04007EB220 = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					CC7B268E2F5784A50007D366 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = CC4C5A982F572A04007EB220;
+					};
+					CC7B26B62F5785690007D366 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = CC4C5A982F572A04007EB220;
 					};
 				};
 			};
@@ -119,12 +220,28 @@
 			projectRoot = "";
 			targets = (
 				CC4C5A982F572A04007EB220 /* RepoLite */,
+				CC7B268E2F5784A50007D366 /* RepoLiteTests */,
+				CC7B26B62F5785690007D366 /* RepoLiteUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CC4C5A972F572A04007EB220 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7B268D2F5784A50007D366 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7B26B52F5785690007D366 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -142,7 +259,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC7B268B2F5784A50007D366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC7B26B32F5785690007D366 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC7B26942F5784A50007D366 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC4C5A982F572A04007EB220 /* RepoLite */;
+			targetProxy = CC7B26932F5784A50007D366 /* PBXContainerItemProxy */;
+		};
+		CC7B26BE2F5785690007D366 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC4C5A982F572A04007EB220 /* RepoLite */;
+			targetProxy = CC7B26BD2F5785690007D366 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CC4C5AA52F572A05007EB220 /* Debug */ = {
@@ -328,6 +472,72 @@
 			};
 			name = Release;
 		};
+		CC7B26962F5784A50007D366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.RepoLiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RepoLite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RepoLite";
+			};
+			name = Debug;
+		};
+		CC7B26972F5784A50007D366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.RepoLiteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RepoLite.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RepoLite";
+			};
+			name = Release;
+		};
+		CC7B26C02F5785690007D366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.RepoLiteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RepoLite;
+			};
+			name = Debug;
+		};
+		CC7B26C12F5785690007D366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Test.RepoLiteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RepoLite;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -345,6 +555,24 @@
 			buildConfigurations = (
 				CC4C5AA82F572A05007EB220 /* Debug */,
 				CC4C5AA92F572A05007EB220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC7B26952F5784A50007D366 /* Build configuration list for PBXNativeTarget "RepoLiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7B26962F5784A50007D366 /* Debug */,
+				CC7B26972F5784A50007D366 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC7B26BF2F5785690007D366 /* Build configuration list for PBXNativeTarget "RepoLiteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC7B26C02F5785690007D366 /* Debug */,
+				CC7B26C12F5785690007D366 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -55,6 +55,7 @@ public struct RepositoryListView: View {
             .onAppear { viewModel.onAppear() }
             .refreshable { await viewModel.refresh() }
         }
+        .accessibilityIdentifier("repositoryListScreen")
     }
 
     // MARK: - Repository List
@@ -89,6 +90,7 @@ public struct RepositoryListView: View {
                 showSignOutAlert = true
             } label: {
                 Label("Sign Out", systemImage: "rectangle.portrait.and.arrow.right")
+                    .accessibilityIdentifier("signOutButton")
             }
         }
     }

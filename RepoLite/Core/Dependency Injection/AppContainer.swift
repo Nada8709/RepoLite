@@ -11,8 +11,7 @@ import Combine
 // Composition root — assembles all dependencies.
 @MainActor
 public final class AppContainer: ObservableObject {
-    // MARK: Core
-    private lazy var keychainService: KeychainServiceProtocol = KeychainService()
+    private let keychainService: KeychainServiceProtocol = KeychainService()
     private lazy var httpClient: HTTPClientProtocol = HTTPClient()
     private lazy var repositoryCache: RepositoryCacheProtocol = RepositoryCache()
 
@@ -36,7 +35,23 @@ public final class AppContainer: ObservableObject {
     var authStatePublisher: AnyPublisher<Bool, Never> { authStateSubject.eraseToAnyPublisher() }
 
     public init() {
-        // Restore session on launch
+        let args = ProcessInfo.processInfo.arguments
+
+        // Force sign out for UI tests
+        if args.contains("RESET_AUTH") {
+            try? keychainService.delete(for: KeychainService.Keys.accessToken)
+            authStateSubject.send(false)
+            return
+        }
+
+        // Force sign in for UI tests
+        if args.contains("MOCK_AUTHENTICATED") {
+            try? keychainService.save("mock_token_ui_test", for: KeychainService.Keys.accessToken)
+            authStateSubject.send(true)
+            return
+        }
+
+        // Normal launch — restore session from Keychain
         let hasToken = (try? keychainService.load(for: KeychainService.Keys.accessToken)) != nil
         authStateSubject.send(hasToken)
     }

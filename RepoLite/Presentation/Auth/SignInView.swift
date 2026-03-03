@@ -71,6 +71,7 @@ public struct SignInView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 14))
                     .padding(.horizontal)
                 }
+                .accessibilityIdentifier("signInButton")
                 .disabled(viewModel.state == .loading)
                 .animation(.default, value: viewModel.state)
             }
